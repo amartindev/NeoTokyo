@@ -1,5 +1,10 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-body {
-font-family: 'Archivo Black', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+$primary-font: 'Shadows Into Light', cursive;
+
+
+// Colors
+
+$white-primary: #f0f8ff;
+$black-primary: #0B1215;

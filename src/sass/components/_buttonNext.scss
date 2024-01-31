@@ -1,0 +1,43 @@
+.container-button-discover {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    bottom: -15rem;
+    gap: 5rem;
+    .button-discover {
+        width: 12rem;
+        height: 3rem;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        color: $white-primary;
+        z-index: 1000;
+
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .button-discover:hover {
+        animation: neon-border-animation 1.5s infinite alternate;
+        background: rgba(32, 14, 14, 0.466);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        color: $white-primary;
+    }
+
+    @keyframes neon-border-animation {
+        0% {
+          box-shadow: 0 0 5px #c55a30, 0 0 10px #c55a30, 0 0 15px #c55a30; /* Estado inicial */
+        }
+        100% {
+          box-shadow: 0 0 15px #c55a30, 0 0 25px #c55a30, 0 0 35px #c55a30; /* Estado final con mayor intensidad */
+        }
+      }
+}

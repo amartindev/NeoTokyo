@@ -1,45 +1,19 @@
 import { useEffect } from "react";
 import "./App.scss";
-import { Character } from "./components/Character";
+import { Character01 } from "./pages/Character-01";
+import { Character02 } from "./pages/Character-02";
+import { Character03 } from "./pages/Character-03";
+import { ThreeD } from "./components/ThreeD";
+import { NavBar } from "./components/NavBar";
 
 function App() {
-useEffect(() => {
-
-  return () => {
-    // document.querySelector('.grid.top-left').addEventListener('mouseover', function() {
-    //     document.querySelector('.card').style.transform = 'rotateY(-15deg) rotateX(15deg)';
-    //   });
-    //   document.querySelector('.grid.top-right').addEventListener('mouseover', function() {
-    //     document.querySelector('.card').style.transform = 'rotateY(15deg) rotateX(15deg)';
-    //   });
-    //   document.querySelector('.grid.bottom-left').addEventListener('mouseover', function() {
-    //     document.querySelector('.card').style.transform = 'rotateY(-15deg) rotateX(-15deg)';
-    //   });
-    //   document.querySelector('.grid.bottom-right').addEventListener('mouseover', function() {
-    //     document.querySelector('.card').style.transform = 'rotateY(15deg) rotateX(-15deg)';
-    //   });
-      
-    //   document.querySelector('.grid.top-left').addEventListener('mouseout', function() {
-    //     document.querySelector('.card').style.transform = 'none';
-    //   });
-    //   document.querySelector('.grid.top-right').addEventListener('mouseout', function() {
-    //     document.querySelector('.card').style.transform = 'none';
-    //   });
-    //   document.querySelector('.grid.bottom-left').addEventListener('mouseout', function() {
-    //     document.querySelector('.card').style.transform = 'none';
-    //   });
-    //   document.querySelector('.grid.bottom-right').addEventListener('mouseout', function() {
-    //     document.querySelector('.card').style.transform = 'none';
-    //   });
-  }
-}, [])
-
-
-
+    useEffect(() => {
+        ThreeD();
+    }, []);
 
     return (
         <>
-
+            <NavBar></NavBar>
             <div className="card">
                 <div className="grid-container">
                     <div className="grid top-left"></div>
@@ -47,8 +21,12 @@ useEffect(() => {
                     <div className="grid bottom-left"></div>
                     <div className="grid bottom-right"></div>
                 </div>
-                <Character></Character>
             </div>
+            <Character01></Character01>
+            <Character02></Character02>
+            <Character03></Character03>
+
+
         </>
     );
 }

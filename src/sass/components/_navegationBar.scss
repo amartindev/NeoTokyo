@@ -1,0 +1,29 @@
+.navegation-bar {
+    position: absolute;
+    width: 30rem;
+    height: 4rem;
+    right: -1200px;
+    top: 0;
+    background-color: $white-primary;
+    z-index: 1000;
+    color: $black-primary;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    li a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+}
