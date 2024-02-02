@@ -8,6 +8,14 @@ export const Character01 = () => {
 
     return (
         <>
+            <div className="card">
+                <div className="grid-container">
+                    <div className="grid top-left"></div>
+                    <div className="grid top-right"></div>
+                    <div className="grid bottom-left"></div>
+                    <div className="grid bottom-right"></div>
+                </div>
+            </div>
             <div id="character01" className="character character01">
                 <div className="container-background-character">
                     <img

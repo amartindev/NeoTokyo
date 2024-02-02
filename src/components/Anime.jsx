@@ -76,6 +76,22 @@ export const Anime = (value) => {
                 translateY: "-340px",
                 delay: 1000,
             });
+            anime({
+                targets:
+                    ".character02 .container-vector-plano-02 .vector-plano-02",
+                translateX: -270,
+                delay: anime.stagger(100),
+            });
+            anime({
+                targets:
+                    ".character02 .container-character-image .character-image",
+                translateX: 270,
+            });
+            anime({
+                targets:
+                    ".character02 .container-text-description",
+                translateX: -270,
+            });
             break;
         case "character03":
             anime({
@@ -105,7 +121,7 @@ export const Anime = (value) => {
                 duration: 3000,
                 translateY: "-340px",
                 delay: 1000,
-            })
+            });
             break;
 
         default:

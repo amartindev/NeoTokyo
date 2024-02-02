@@ -7,24 +7,29 @@ export const Character02 = () => {
     
     useEffect(() => {
         const handleScroll = () => {
-            const element = characterRef.current;
-            if (element) {
-                const rect = element.getBoundingClientRect();
-                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-                const triggerPoint = windowHeight * 0.1;
-
-                if (rect.top < triggerPoint) {
-                    Anime("character02");
+            window.requestAnimationFrame(() => {
+                const element = characterRef.current;
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                    const triggerPoint = windowHeight * 0.1;
+    
+                    if (rect.top < triggerPoint) {
+                        Anime("character02");
+                    }
                 }
-            }
+            });
         };
+    
         window.addEventListener("scroll", handleScroll);
+    
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
     return (
-        <div ref={characterRef} id="character02" className="character02">
+
+        <div ref={characterRef} id="character02" className="character character02 ">
             <div className="container container-character-title">
                 <h1 className="title">Welcome</h1>
             </div>
@@ -94,5 +99,6 @@ export const Character02 = () => {
 
             </div>
         </div>
+
     );
 };

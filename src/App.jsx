@@ -6,7 +6,18 @@ import { Character03 } from "./pages/Character-03";
 import { ThreeD } from "./components/ThreeD";
 import { NavBar } from "./components/NavBar";
 
+import { gsap } from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function App() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.defaults({
+        toggleActions: "restart pause resume pause",
+        scroller: ".characters-container",
+    });
+
     useEffect(() => {
         ThreeD();
     }, []);
@@ -14,19 +25,16 @@ function App() {
     return (
         <>
             <NavBar></NavBar>
-            <div className="card">
-                <div className="grid-container">
-                    <div className="grid top-left"></div>
-                    <div className="grid top-right"></div>
-                    <div className="grid bottom-left"></div>
-                    <div className="grid bottom-right"></div>
-                </div>
+
+            <div className="characters-container">
+                <section className="panel">
+                    <Character01></Character01>
+                    <Character02></Character02>
+                    <Character03></Character03>
+                </section>
+                <section className="panel"></section>
+                <section className="panel"></section>
             </div>
-            <Character01></Character01>
-            <Character02></Character02>
-            <Character03></Character03>
-
-
         </>
     );
 }
