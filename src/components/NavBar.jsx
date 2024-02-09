@@ -28,7 +28,7 @@ export const NavBar = () => {
                         <a  onClick={() => ScrollToSection("character03")} >MEDIA</a>
                     </li>
                     <li>
-                        <a >STUDIOS</a>
+                    <a  onClick={() => ScrollToSection("character04")} >STUDIOS</a>
                     </li>
                 </ul>
             </div>

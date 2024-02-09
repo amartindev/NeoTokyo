@@ -1,7 +1,7 @@
 .navegation-bar {
     position: absolute;
     width: 30rem;
-    height: 4rem;
+    height: 3rem;
     right: -1200px;
     top: 0;
     background-color: $white-primary;
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    font-family: $secondary-font;
     ul {
         list-style: none;
         display: flex;
@@ -25,5 +25,41 @@
         text-decoration: none;
         color: inherit;
         cursor: pointer;
+        transition: 0.5s ease;
+        cursor: pointer;
     }
+    a::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 0;
+        background-color: $blue-secondary;
+        transition: 0.5s ease;
+    }
+    a:hover {
+        color: $white-primary;
+        transition-delay: 0.5s;
+    }
+    a:hover::before{
+        width: 100%;
+    }
+    a::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: $blue-primary;
+        transition: 0.4s ease;
+        z-index: -1;
+    }
+    a:hover::after {
+        height: 100%;
+        transition-delay: 0.4s;
+        color: aliceblue;
+      }
+
 }

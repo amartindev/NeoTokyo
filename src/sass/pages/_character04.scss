@@ -1,0 +1,143 @@
+.character04 {
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 300%;
+    z-index: 5;
+    background-color: $black-primary;
+
+    .container-title {
+        position: absolute;
+        color: $white-primary;
+        width: 100%;
+        .title {
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+
+    .container-cards {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        translate: 30rem;
+
+        .myCard {
+            background-color: transparent;
+            width: 190px;
+            height: 254px;
+            perspective: 1000px;
+            .container-description {
+                position: absolute;
+                padding-left: 2rem;
+                .title {
+                    font-size: 1.5em;
+                    font-weight: 900;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+            .frontSide {
+                .character-image {
+                    position: relative;
+                    bottom: 30px;
+                    width: 90%;
+                }
+            }
+            .backSide {
+                .character-image {
+                    transform: scaleX(-1);
+                    position: relative;
+                    left: -90px;
+                    top:-25px;
+                    width: 90%;
+                }
+            }
+
+            .innerCard {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.5s;
+                transform-style: preserve-3d;
+                cursor: pointer;
+
+                &:hover {
+                    transform: rotateY(180deg) scale(1.6);
+                }
+            }
+
+            .frontSide,
+            .backSide {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                border-radius: 1rem;
+                color: $white-primary;
+                box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+                font-weight: 700;
+
+                &::before {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    content: "";
+                    width: 110%;
+                    height: 110%;
+                    position: absolute;
+                    z-index: -1;
+                    border-radius: 1em;
+                    filter: blur(20px);
+                    animation: animate 5s linear infinite;
+                }
+            }
+
+            .frontSide,
+            .frontSide::before {
+                background: linear-gradient(
+                    43deg,
+                    rgb(65, 88, 208) 0%,
+                    rgb(200, 80, 192) 100%,
+                );
+            }
+
+            .backSide,
+            .backSide::before {
+                background-image: linear-gradient(
+                    160deg,
+                    $blue-primary 0%,
+                    $blue-secondary 100%
+                );
+            }
+
+            .backSide {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            opacity: 0.3;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0.3;
+        }
+    }
+}

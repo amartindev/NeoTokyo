@@ -1,35 +1,27 @@
 import { useEffect, useRef } from "react";
 import { Anime } from "../components/Anime";
 import { ScrollToSection } from "../components/ScrollToSection"
+import { gsap } from "gsap";
 
 export const Character02 = () => {
     const characterRef = useRef(null);
+
     
     useEffect(() => {
-        const handleScroll = () => {
-            window.requestAnimationFrame(() => {
-                const element = characterRef.current;
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-                    const triggerPoint = windowHeight * 0.1;
-    
-                    if (rect.top < triggerPoint) {
-                        Anime("character02");
-                    }
-                }
-            });
-        };
-    
-        window.addEventListener("scroll", handleScroll);
-    
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+        gsap.to(".character02", {
+            scrollTrigger: {
+              trigger: ".character02",
+              start: "top center",
+              scrub: true,
+            },
+            onStart: function() {
+                Anime("character02"); 
+              }
+          });
     }, []);
     return (
 
-        <div ref={characterRef} id="character02" className="character character02 ">
+        <div ref={characterRef} id="character02" className="character character02">
             <div className="container container-character-title">
                 <h1 className="title">Welcome</h1>
             </div>

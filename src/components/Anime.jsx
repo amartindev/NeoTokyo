@@ -85,26 +85,27 @@ export const Anime = (value) => {
             anime({
                 targets:
                     ".character02 .container-character-image .character-image",
-                translateX: 270,
+                translateX: 280,
             });
             anime({
-                targets:
-                    ".character02 .container-text-description",
-                translateX: -270,
+                targets: ".character02 .container-text-description",
+                translateX: -280,
             });
             break;
         case "character03":
             anime({
                 targets:
                     ".character03 .container-character-image .character3-2",
-                translateX: "23rem",
+                translateX: "28rem",
+                translateY: 30,
                 scale: 1.3,
                 easing: "easeInOutQuad",
             });
             anime({
                 targets:
                     ".character03 .container-character-image .character3-1",
-                translateX: "-23rem",
+                translateX: "-28rem",
+                translateY: 30,
                 scale: 1.3,
                 easing: "easeInOutQuad",
             });
@@ -116,6 +117,34 @@ export const Anime = (value) => {
                 easing: "easeInOutQuad",
             });
             anime({
+                targets: ".character03 .morphing .triangle",
+                points: [
+                    { value: "50,5 95,95 5,95" },
+                    { value: "20,20 80,20 50,80" },
+                    { value: "50,80 80,20 20,20" },
+                    { value: "80,20 20,20 50,80" },
+                    { value: "50,5 95,95 5,95" },
+                    { value: "50,5 95,95 5,95" },
+                ],
+                easing: "easeInOutQuad",
+                duration: 6000,
+                loop: true,
+            });
+            anime({
+                targets: ".character03 .triangle-left",
+                translateX: "-31rem",
+                scale: 2,
+                delay: 1000,
+                duration: 1000,
+            });
+            anime({
+                targets: ".character03 .triangle-right",
+                translateX: "31rem",
+                scale: 2,
+                delay: 1000,
+                duration: 1000,
+            });
+            anime({
                 targets:
                     ".character03 .container-button-discover .button-discover",
                 duration: 3000,
@@ -123,7 +152,20 @@ export const Anime = (value) => {
                 delay: 1000,
             });
             break;
-
+            case "character04":
+            anime({
+                targets:
+                    ".character04 .container-button-discover .button-discover",
+                duration: 3000,
+                translateY: "-340px",
+                delay: 1000,
+            });
+            anime({
+                targets: '.character04 .container-cards .myCard',
+                translateX: "-30rem",
+                delay: anime.stagger(200)
+              });
+            break;
         default:
             break;
     }

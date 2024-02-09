@@ -11,13 +11,14 @@
         width: 12rem;
         height: 3rem;
         border-radius: 25px;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: $white-primary;
         z-index: 1000;
-
+        font-family: $secondary-font;
+        letter-spacing: 2px;
         background: rgba(255, 255, 255, 0.1);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.3);
         cursor: pointer;
@@ -34,10 +35,10 @@
 
     @keyframes neon-border-animation {
         0% {
-          box-shadow: 0 0 5px #c55a30, 0 0 10px #c55a30, 0 0 15px #c55a30; /* Estado inicial */
+          box-shadow: 0 0 5px $blue-primary, 0 0 10px $blue-primary, 0 0 15px $blue-primary;
         }
         100% {
-          box-shadow: 0 0 15px #c55a30, 0 0 25px #c55a30, 0 0 35px #c55a30; /* Estado final con mayor intensidad */
+          box-shadow: 0 0 15px $blue-primary, 0 0 25px $blue-primary, 0 0 35px $blue-primary;
         }
       }
 }

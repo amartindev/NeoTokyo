@@ -61,38 +61,7 @@ export const Character01 = () => {
                         data="./assets/character1/Vector03.svg"
                     ></object>
                 </div>
-                <div className="container container-vector-plano-04">
-                    <object
-                        className="vector-plano-04 vector-plano-04-left"
-                        type="image/svg+xml"
-                        data="./assets/character1/Vector04-left.svg"
-                    ></object>
-                    <object
-                        className="vector-plano-04 vector-plano-04-left"
-                        type="image/svg+xml"
-                        data="./assets/character1/Vector04-left.svg"
-                    ></object>
-                    <object
-                        className="vector-plano-04 vector-plano-04-left"
-                        type="image/svg+xml"
-                        data="./assets/character1/Vector04-left.svg"
-                    ></object>
-                    <object
-                        className="vector-plano-04 vector-plano-04-right"
-                        type="image/svg+xml"
-                        data="./assets/character1/Vector04-right.svg"
-                    ></object>
-                    <object
-                        className="vector-plano-04 vector-plano-04-right"
-                        type="image/svg+xml"
-                        data="./assets/character1/Vector04-right.svg"
-                    ></object>
-                    <object
-                        className="vector-plano-04 vector-plano-04-right"
-                        type="image/svg+xml"
-                        data="./assets/character1/Vector04-right.svg"
-                    ></object>
-                </div>
+
             </div>
             <div className="character01">
                 <div className="container-button-discover">
