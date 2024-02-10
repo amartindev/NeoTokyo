@@ -133,28 +133,24 @@
 
     @keyframes animate {
         0% {
-          opacity: 0.3;
+            opacity: 0.3;
+            pointer-events: auto;
         }
-      
+    
         40% {
-          opacity: 1;
+            opacity: 1;
+            pointer-events: none;
         }
-      
+    
         60% {
-          opacity: 0.3;
+            opacity: 0.3;
+            pointer-events: none;
         }
-      
+    
         100% {
-          opacity: 0.3;
+            opacity: 0.3;
+            pointer-events: auto;
         }
-      
-        /* Agrega la clase temporal durante la animación */
-        0%, 100% {
-          pointer-events: auto;
-        }
-      
-        40%, 60% {
-          pointer-events: none;
-        }
-      }
+    }
+    
 }
