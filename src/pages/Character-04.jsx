@@ -17,6 +17,15 @@ export const Character04 = () => {
                 Anime("character04");
             },
         });
+        const myCard = document.querySelector(".myCard");
+
+        myCard.addEventListener("animationstart", () => {
+            myCard.classList.add("no-hover");
+        });
+
+        myCard.addEventListener("animationend", () => {
+            myCard.classList.remove("no-hover");
+        });
     }, []);
     return (
         <div ref={characterRef} id="character04" className="character04 ">
@@ -24,7 +33,7 @@ export const Character04 = () => {
                 <h2 className="title">New Characters</h2>
             </div>
             <div className="container-cards">
-            <div className="myCard">
+                <div className="myCard">
                     <div className="innerCard">
                         <div className="frontSide">
                             <img
