@@ -166,6 +166,14 @@ export const Anime = (value) => {
                 delay: anime.stagger(200)
               });
             break;
+            case "navBar":
+                anime({
+                    targets: ".container-navegation-bar .navegation-bar",
+                    duration: 2000,
+                    translateX: "-900px",
+                    delay: 100,
+                });
+            break
         default:
             break;
     }

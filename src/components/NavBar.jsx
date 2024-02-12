@@ -1,17 +1,11 @@
-import anime from "animejs";
+import { Anime } from "../components/Anime";
 import { useEffect } from "react";
 import { ScrollToSection } from "./ScrollToSection";
 
 export const NavBar = () => {
+
     useEffect(() => {
-        return () => {
-            anime({
-                targets: ".container-navegation-bar .navegation-bar",
-                duration: 2000,
-                translateX: "-900px",
-                delay: 100,
-            });
-        };
+        Anime("navBar");
     }, []);
 
     return (
