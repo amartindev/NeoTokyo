@@ -6,9 +6,7 @@ import { Character03 } from "./pages/Character-03";
 import { Character04 } from "./pages/Character-04";
 import { ThreeD } from "./components/ThreeD";
 import { NavBar } from "./components/NavBar";
-
 import { gsap } from "gsap";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
@@ -26,7 +24,6 @@ function App() {
     return (
         <>
             <NavBar></NavBar>
-
             <div className="characters-container">
                 <section className="panel">
                     <Character01></Character01>
