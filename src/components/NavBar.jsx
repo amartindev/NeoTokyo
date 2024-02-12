@@ -8,7 +8,7 @@ export const NavBar = () => {
             anime({
                 targets: ".container-navegation-bar .navegation-bar",
                 duration: 2000,
-                translateX: "-1200px",
+                translateX: "-900px",
                 delay: 100,
             });
         };
