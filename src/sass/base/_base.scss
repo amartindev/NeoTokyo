@@ -32,3 +32,7 @@ body {
     transform-style: preserve-3d;
     transition: transform 0.5s;
 }
+
+.panel-character05 {
+    z-index: -1000;
+}

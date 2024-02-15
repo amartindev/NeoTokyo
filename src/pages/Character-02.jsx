@@ -3,6 +3,7 @@ import { Anime } from "../components/Anime";
 import { ScrollToSection } from "../components/ScrollToSection"
 import { gsap } from "gsap";
 
+
 export const Character02 = () => {
     const characterRef = useRef(null);
 
@@ -15,7 +16,8 @@ export const Character02 = () => {
               scrub: true,
             },
             onStart: function() {
-                Anime("character02"); 
+                Anime("character02");
+
               }
           });
     }, []);

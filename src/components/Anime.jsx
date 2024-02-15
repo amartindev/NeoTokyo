@@ -152,7 +152,7 @@ export const Anime = (value) => {
                 delay: 1000,
             });
             break;
-            case "character04":
+        case "character04":
             anime({
                 targets:
                     ".character04 .container-button-discover .button-discover",
@@ -161,19 +161,46 @@ export const Anime = (value) => {
                 delay: 1000,
             });
             anime({
-                targets: '.character04 .container-cards .myCard',
+                targets: ".character04 .container-cards .myCard",
                 translateX: "-30rem",
-                delay: anime.stagger(200)
-              });
+                delay: anime.stagger(200),
+            });
             break;
-            case "navBar":
-                anime({
-                    targets: ".container-navegation-bar .navegation-bar",
-                    duration: 2000,
-                    translateX: "-900px",
-                    delay: 100,
-                });
-            break
+        case "character05":
+            anime({
+                targets:
+                    ".character05 .container-button-discover .button-discover",
+                duration: 3000,
+                translateY: "-340px",
+                delay: 1000,
+            });
+            break;
+        case "character06":
+            anime({
+                targets:
+                    ".character06 .container-button-discover .button-discover",
+                duration: 3000,
+                translateY: "-340px",
+                delay: 1000,
+            });
+            break;
+        case "character07":
+            anime({
+                targets:
+                    ".character06 .container-button-discover .button-discover",
+                duration: 3000,
+                translateY: "-340px",
+                delay: 1000,
+            });
+            break;
+        case "navBar":
+            anime({
+                targets: ".container-navegation-bar .navegation-bar",
+                duration: 2000,
+                translateX: "-900px",
+                delay: 100,
+            });
+            break;
         default:
             break;
     }

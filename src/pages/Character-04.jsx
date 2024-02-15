@@ -3,6 +3,7 @@ import { Anime } from "../components/Anime";
 import { ScrollToSection } from "../components/ScrollToSection";
 import { gsap } from "gsap";
 
+
 export const Character04 = () => {
     const characterRef = useRef(null);
 
@@ -15,20 +16,12 @@ export const Character04 = () => {
             },
             onStart: function () {
                 Anime("character04");
+
             },
-        });
-        const myCard = document.querySelector(".myCard");
-
-        myCard.addEventListener("animationstart", () => {
-            myCard.classList.add("no-hover");
-        });
-
-        myCard.addEventListener("animationend", () => {
-            myCard.classList.remove("no-hover");
         });
     }, []);
     return (
-        <div ref={characterRef} id="character04" className="character04 ">
+        <div ref={characterRef} id="character04" className="character04">
             <div className="container-title">
                 <h2 className="title">New Characters</h2>
             </div>
@@ -106,7 +99,7 @@ export const Character04 = () => {
             <div className="container-button-discover">
                 <button
                     className="button-discover "
-                    onClick={() => ScrollToSection("character01")}
+                    onClick={() => ScrollToSection("character05")}
                 >
                     CONTINUE
                 </button>
