@@ -6,4 +6,29 @@
     top: 500%;
     z-index: 5;
     background-color: $black-primary;
+
+    .custom-shape-divider-bottom-1708011579 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-bottom-1708011579 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 235px;
+    }
+    
+    .custom-shape-divider-bottom-1708011579 .shape-fill {
+        fill: $white-primary;
+    }
+
+      .button-discover {
+        background-color: $black-primary;
+        
+      }
 }

@@ -3,7 +3,6 @@ import { Anime } from "../components/Anime";
 import { ScrollToSection } from "../components/ScrollToSection";
 import { gsap } from "gsap";
 
-
 export const Character04 = () => {
     const characterRef = useRef(null);
 
@@ -16,12 +15,16 @@ export const Character04 = () => {
             },
             onStart: function () {
                 Anime("character04");
-
             },
         });
     }, []);
     return (
         <div ref={characterRef} id="character04" className="character04">
+            <object
+                className="background-neon"
+                type="image/svg+xml"
+                data="./assets/character6/background.svg"
+            ></object>
             <div className="container-title">
                 <h2 className="title">New Characters</h2>
             </div>

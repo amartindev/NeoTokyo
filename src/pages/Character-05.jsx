@@ -27,7 +27,7 @@ export const Character05 = () => {
                         <div className="slide__inner">
                             <div className="slide__content">
                                 <div className="slide__container">
-                                    <h2 className="slide__heading">SCROLL</h2>
+                                    <h2 className="slide__heading">New Maps</h2>
                                     <figure className="slide__img-cont">
                                         <img
                                             className="slide__img"
@@ -46,7 +46,7 @@ export const Character05 = () => {
                         <div className="slide__inner">
                             <div className="slide__content">
                                 <div className="slide__container">
-                                    <h2 className="slide__heading">SWIPE</h2>
+                                    <h2 className="slide__heading">New Locations</h2>
                                     <figure className="slide__img-cont">
                                         <img
                                             className="slide__img"
@@ -65,7 +65,7 @@ export const Character05 = () => {
                         <div className="slide__inner">
                             <div className="slide__content">
                                 <div className="slide__container">
-                                    <h2 className="slide__heading">SCROLL</h2>
+                                    <h2 className="slide__heading">New Cities</h2>
                                     <figure className="slide__img-cont">
                                         <img
                                             className="slide__img"
@@ -84,7 +84,7 @@ export const Character05 = () => {
                         <div className="slide__inner">
                             <div className="slide__content">
                                 <div className="slide__container">
-                                    <h2 className="slide__heading">SWIPE</h2>
+                                    <h2 className="slide__heading">More Adventures</h2>
                                     <figure className="slide__img-cont">
                                         <img
                                             className="slide__img"
@@ -109,7 +109,7 @@ export const Character05 = () => {
                             />
                             <img
                                 className="image"
-                                src="./assets/character5/background02.jpg"
+                                src="./assets/character5/background04.jpeg"
                             />
                             <img
                                 className="image"
@@ -117,7 +117,7 @@ export const Character05 = () => {
                             />
                             <img
                                 className="image"
-                                src="./assets/character5/background04.jpeg"
+                                src="./assets/character5/background02.jpg"
                             />
                         </figure>
                     </div>
