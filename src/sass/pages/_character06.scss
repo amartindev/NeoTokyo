@@ -15,20 +15,64 @@
         overflow: hidden;
         line-height: 0;
     }
-    
+
     .custom-shape-divider-bottom-1708011579 svg {
         position: relative;
         display: block;
         width: calc(100% + 1.3px);
         height: 235px;
     }
-    
+
     .custom-shape-divider-bottom-1708011579 .shape-fill {
         fill: $white-primary;
     }
 
-      .button-discover {
+    .button-discover {
         background-color: $black-primary;
-        
-      }
+    }
+    .container-image-profil {
+        position: absolute;
+        bottom: -600px;
+    }
+    .container-contact {
+        position: absolute;
+        top: 3rem;
+        left: 70%;
+        color: $white-primary;
+        width: 20rem;
+        font-size: 3rem;
+        .list-contact {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: relative;
+            left: 340px;
+        }
+        li {
+            a {
+                text-decoration: none;
+                color: $white-primary;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 3rem;
+                margin: -2rem;
+                font-family: $secondary-font;
+            }
+        }
+        .name {
+            text-align: center;
+            font-family: $secondary-font;
+            mix-blend-mode: difference;
+            position: relative;
+            bottom: -340px;
+        }
+    }
+    footer {
+        color: $black-primary;
+        position: absolute;
+        bottom: 0;
+        font-family: $secondary-font;
+    }
 }

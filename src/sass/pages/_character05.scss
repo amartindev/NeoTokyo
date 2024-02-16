@@ -79,16 +79,15 @@
             --width: 200;
             display: block;
             text-align: left;
-            font-size: clamp(3rem, 15vw, 6rem);
+            font-size: clamp(3rem, 15vw, 5rem);
             font-weight: 900;
             font-variation-settings: "wdth" var(--width);
             margin: 0;
             padding: 0;
             color: $white-primary;
             z-index: 5;
-            // mix-blend-mode: difference;
-            grid-area: 2 / 2 / 7 / 10;
-            align-self: end;
+            grid-area: 1 / 3 / 7 / 10;
+            align-self: center;
         }
 
         &__img-cont {
@@ -108,7 +107,7 @@
         .slide__content {
             background: linear-gradient(
                     to right,
-                    rgb(0 0 0 / 0.2),
+                    rgb(0 0 0 / 0.5),
                     rgb(0 0 0 / 0)
                 ),
                 url("/assets/character5/background01.jpg");
@@ -123,7 +122,7 @@
         .slide__content {
             background: linear-gradient(
                     to right,
-                    rgb(0 0 0 / 0.2),
+                    rgb(0 0 0 / 0.5),
                     rgb(0 0 0 / 0)
                 ),
                 url("/assets/character5/background02.jpg");
@@ -137,7 +136,7 @@
         .slide__content {
             background: linear-gradient(
                     to right,
-                    rgb(0 0 0 / 0.2),
+                    rgb(0 0 0 / 0.5),
                     rgb(0 0 0 / 0)
                 ),
                 url("/assets/character5/background03.jpg");
@@ -151,7 +150,7 @@
         .slide__content {
             background: linear-gradient(
                     to right,
-                    rgb(0 0 0 / 0.2),
+                    rgb(0 0 0 / 0.5),
                     rgb(0 0 0 / 0)
                 ),
                 url("/assets/character5/background04.jpeg");
@@ -218,6 +217,9 @@
 
         .overlay__img-cont {
             grid-area: 2 / 8 / 11 / 10;
+            border-radius: 25px;
+            box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.7);
+
         }
 
         .overlay__count {
@@ -227,11 +229,13 @@
         .slide__img-cont {
             margin-top: 0;
             grid-area: 3 / 2 / 11 / 4;
-            transform: scale(2) translateX(-70px);
+            transform: scale(1.4) translateX(-70px);
         }
 
         .slide__heading {
-            grid-area: 1 / 4 / 4 / 10;
+            grid-area: 1 / 4 / 4 / 8;
+            transform: translateY(-40px);
+            text-align: center;
         }
     }
 }

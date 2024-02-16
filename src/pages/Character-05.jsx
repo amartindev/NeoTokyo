@@ -59,7 +59,7 @@ export const Character05 = () => {
                         </div>
                     </div>
                 </section>
-
+                
                 <section className="slide">
                     <div className="slide__outer">
                         <div className="slide__inner">

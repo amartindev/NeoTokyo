@@ -104,7 +104,7 @@ export const Character04 = () => {
                     className="button-discover "
                     onClick={() => ScrollToSection("character05")}
                 >
-                    CONTINUE
+                    MAPS
                 </button>
             </div>
         </div>

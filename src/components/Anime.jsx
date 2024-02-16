@@ -183,15 +183,28 @@ export const Anime = (value) => {
                 translateY: "-340px",
                 delay: 1000,
             });
-            break;
-        case "character07":
             anime({
                 targets:
-                    ".character06 .container-button-discover .button-discover",
+                    ".character06 .container-image-profil",
                 duration: 3000,
                 translateY: "-340px",
-                delay: 1000,
+                delay: 500,
             });
+            anime({
+                targets:
+                    ".character06 .container-contact .list-contact .list-item",
+                duration: 3000,
+                translateX: "-340px",
+                delay: anime.stagger(200),
+            });
+            anime({
+                targets:
+                    ".character06 .container-contact .name",
+                duration: 3000,
+                translateY: "-340px",
+                delay: 800,
+            });
+
             break;
         case "navBar":
             anime({
