@@ -13,7 +13,7 @@ export const NavBar = () => {
             <div className="navegation-bar">
                 <ul>
                     <li>
-                        <a href="">STORE</a>
+                        <a href="">HOME</a>
                     </li>
                     <li>
                         <a onClick={() => ScrollToSection("character02")} >NEWS</a>
