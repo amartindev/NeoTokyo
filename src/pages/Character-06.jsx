@@ -23,6 +23,7 @@ export const Character06 = () => {
                 <img src="./assets/character6/bunn.png" alt="" />
             </div>
             <object
+            className="background-char06"
                 type="image/svg+xml"
                 data="./assets/character6/background.svg"
             ></object>

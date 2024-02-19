@@ -42,6 +42,7 @@
         width: 20rem;
         font-size: 3rem;
         .list-contact {
+            transition: all 0.5s ease;
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -69,10 +70,43 @@
             bottom: -340px;
         }
     }
+    .list-item {
+        cursor: pointer;
+        transition: box-shadow 0.5s ease-in-out;
+    }
+    .list-item:hover {
+        text-transform: uppercase;
+    }
     footer {
         color: $black-primary;
         position: absolute;
         bottom: 0;
         font-family: $secondary-font;
+    }
+    @media only screen and (max-width: $telefono) {
+        .container-contact {
+            .list-contact {
+                left: 20% !important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $desktop) {
+        .background-char06 {
+            height: 100vh;
+        }
+        .container-image-profil {
+            img {
+                position: relative;
+                right: 40%;
+            }
+        }
+        .container-contact {
+            color: $white-primary;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+            .list-contact {
+                left: 60%;
+            }
+        }
     }
 }
